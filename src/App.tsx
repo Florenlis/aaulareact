@@ -1,13 +1,36 @@
-import { GlobalStyle } from "./styles/GlobalStyle";
+import { ComponentFooter, ComponentHeader } from "./components";
+import { PageHome, PageList } from "./pages";
+import { GlobalStyle, Main } from "./styles/GlobalStyle";
+import { Dispatch, SetStateAction, useState } from "react";
 
-  export function App(){
+export interface IPage {
+  setPage: Dispatch<SetStateAction<number>>
+}
+export function App() {
+  const [page, setPage] = useState(1)
+  let component
+  switch (page) {
+    case 1:
+      component = <PageHome />
+      break;
+    case 2:
+      component = <PageList />
+      break;
+    default:
+      component = <PageHome />
+      break;
+  }
   return (
     <>
-    <GlobalStyle />
-    <h1> PQP </h1>
+      <GlobalStyle />
+      <ComponentHeader setPage={setPage} />
+      <Main>
+        {component}
+      </Main>
+      <ComponentFooter />
     </>
-   
   )
-  }
+}
+
 
  
