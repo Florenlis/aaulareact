@@ -1,23 +1,24 @@
 import * as S from "./styles"
-import Logo from "../../assets/truck.svg"
-import { IPage } from "../../App"
+import logo from "../../assets/logo.png"
 
-export function Header({ setPage }: IPage) {
+export function Header() {
   return (
+   
     <S.Header>
-      <picture>
-        <img src={Logo} alt="Logo" />
-      </picture>
+    <picture>
+       <img src={logo} alt="Logo" />
+    </picture>
       <S.NavBar>
         <ul>
           <li>
-            <a href="#" onClick={() => setPage(1)}>Página Inicial</a>
+            <a href="Home">HOME</a>
           </li>
           <li>
-            <a href="#" onClick={() => setPage(2)}>Lista</a>
+            <a href="List">COMIDA</a>
           </li>
         </ul>
       </S.NavBar>
     </S.Header>
+
   )
 }

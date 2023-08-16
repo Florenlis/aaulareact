@@ -27,11 +27,12 @@ export const NavBar = styled.nav`
     align-items: center;
     height: 100%;
     li {
-      padding: 1rem;
+      padding: 2rem;
       height: 100%;
       display: flex;
       align-items: center;
       a {
+        font-size:26px;
         text-decoration: none;
         color: var(--black);
       }
@@ -39,6 +40,5 @@ export const NavBar = styled.nav`
     li:hover {
       background-color: ${colors.secondaryLight};
     }
-  }
+  }`
 
-`

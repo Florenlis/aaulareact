@@ -8,13 +8,16 @@ export const GlobalStyle = createGlobalStyle`
     border: 0;
     box-sizing: border-box;
   }
+  body{
+    background-image: url(src/assets/sashimi-meal-with-lettuce-and-tea-4quft3rkrl9jrhhg.jpg);
+  }
 `
 export const colors = {
-  primary: "#2B75E2",
-  secondary: "#FFC107",
-  secondaryLight: "#f0dea5",
-  third: "#78909C",
-  thirdLight: "#d9d9d9",
+  primary: "#ff2400",
+  secondary: "#ff2400",
+  secondaryLight: "#ff2400",
+  third: "#ff2400",
+  thirdLight: "#000",
   black: "#000",
   white: "#fff"
 }
