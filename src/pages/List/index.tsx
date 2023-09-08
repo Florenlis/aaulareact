@@ -1,19 +1,20 @@
-import * as S from './style'
-import { dados } from "../../services/dados"
-import { ComponentCard } from '../../components'
+import { ComponentCard } from '../../components'; 
+import * as A from './style'; 
+import { dados } from '../../services/dados';
+
 
 export function List() {
   return (
-    <S.Section>
-      
-      {dados.map(item => (
+    <A.ListSection>
+      {dados.map((item) => (
         <ComponentCard
           key={item.id}
-          data={item.data}
-          mensagem={item.mensagem}
-          titulo={item.titulo}
-        />
+          nome={item.nome}
+          descricao={item.descricao}
+          preco={item.preco} id={0}        />
       ))}
-    </S.Section>
-  )
+    </A.ListSection>
+  );
 }
+
+

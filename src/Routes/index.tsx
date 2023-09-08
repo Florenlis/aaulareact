@@ -1,14 +1,13 @@
-import { Routes, Route } from "react-router-dom"
-import { PageHome,PageList,PageLayout} from "../pages"
+import { Routes, Route } from "react-router-dom";
+import { PageHome, PageList} from "../pages";
 
 export function RouteSoftware() {
   return (
     <Routes>
-        
-      <Route path="/" element={<PageLayout />}>
-        <Route path="HOME" element={<PageHome />} />
-        <Route path="COMIDA" element={<PageList />} />
+      <Route>
+        <Route path="/Home" element={<PageHome />} />
+        <Route path="/List" element={<PageList />} /> 
       </Route>
     </Routes>
-  )
+  );
 }

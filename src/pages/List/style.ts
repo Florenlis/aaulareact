@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const Section = styled.section`
+export const ListSection = styled.section`
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 1rem;
@@ -14,4 +14,4 @@ export const Section = styled.section`
   @media (max-width: 500px) {
     grid-template-columns: auto;
   }
-`
+`;

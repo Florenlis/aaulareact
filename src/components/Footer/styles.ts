@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyle"
 
 export const Footer = styled.aside`
-  background-color: ${colors.thirdLight};
+  background-color: ${colors.black};
   height: 3rem;
   padding-bottom: 0;
   img {

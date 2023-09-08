@@ -6,31 +6,32 @@ import { Dispatch, SetStateAction, useState } from "react";
 export interface IPage {
   setPage: Dispatch<SetStateAction<number>>
 }
+
 export function App() {
-  const [page, setPage] = useState(1)
-  let component
+  
+  const [page] = useState(2); 
+
+  let component;
   switch (page) {
     case 1:
-      component = <PageHome />
+      component = <PageHome />;
       break;
     case 2:
-      component = <PageList />
+      component = <PageList />;
       break;
     default:
-      component = <PageHome />
+      component = <PageHome />;
       break;
   }
+
   return (
     <>
       <GlobalStyle />
-      <ComponentHeader setPage={setPage} />
-      <Main>
-        {component}
-      </Main>
+      <ComponentHeader />
+      <Main>{component}</Main>
       <ComponentFooter />
     </>
-  )
+  );
 }
 
 
- 

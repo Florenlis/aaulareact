@@ -11,10 +11,10 @@ export function Header() {
       <S.NavBar>
         <ul>
           <li>
-            <a href="Home">HOME</a>
+          <a href="/Home">HOME</a>
           </li>
           <li>
-            <a href="List">COMIDA</a>
+          <a href="/List">COMBOS</a>
           </li>
         </ul>
       </S.NavBar>
